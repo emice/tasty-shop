@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  award_pool_id: 1
+  qualifiable_award_type: MyString
+  qualifiable_award_id: 1
+
+two:
+  award_pool_id: 1
+  qualifiable_award_type: MyString
+  qualifiable_award_id: 1

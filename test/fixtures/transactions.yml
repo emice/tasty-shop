@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  transactable_type: MyString
+  transactable_id: 1
+  receivable_type: MyString
+  receivable_id: 1
+  net_value: 1
+
+two:
+  user_id: 1
+  transactable_type: MyString
+  transactable_id: 1
+  receivable_type: MyString
+  receivable_id: 1
+  net_value: 1

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gifts_given: 1
+  next_level: 1
+
+two:
+  gifts_given: 1
+  next_level: 1

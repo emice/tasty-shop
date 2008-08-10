@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  store_id: 1
+  ownership_id: 1
+  asking_price: 1
+  friends_only: false
+
+two:
+  store_id: 1
+  ownership_id: 1
+  asking_price: 1
+  friends_only: false

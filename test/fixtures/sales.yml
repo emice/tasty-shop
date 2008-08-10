@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  store_id: 1
+  selling_user_id: 1
+  buying_user_id: 1
+
+two:
+  store_id: 1
+  selling_user_id: 1
+  buying_user_id: 1

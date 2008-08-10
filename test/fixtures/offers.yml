@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  store_inventory_id: 1
+  offering_user_id: 1
+  value: 1
+
+two:
+  store_inventory_id: 1
+  offering_user_id: 1
+  value: 1

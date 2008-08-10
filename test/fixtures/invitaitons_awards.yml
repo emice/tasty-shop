@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  invites_sent: 1
+  next_level: 1
+
+two:
+  invites_sent: 1
+  next_level: 1

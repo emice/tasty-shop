@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  awardable_template_type: MyString
+  awardable_template_id: 1
+  quantity_available: 1
+  notes: MyString
+
+two:
+  awardable_template_type: MyString
+  awardable_template_id: 1
+  quantity_available: 1
+  notes: MyString

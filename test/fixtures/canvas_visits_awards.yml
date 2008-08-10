@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  visited_days: 1
+  total_days: 1
+  next_level: 1
+
+two:
+  visited_days: 1
+  total_days: 1
+  next_level: 1

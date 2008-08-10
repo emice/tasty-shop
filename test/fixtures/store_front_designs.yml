@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  creating_user_id: 1
+  name: MyString
+  base_value: 1
+  left_image_id: 1
+  top_image_id: 1
+  right_image_id: 1
+
+two:
+  creating_user_id: 1
+  name: MyString
+  base_value: 1
+  left_image_id: 1
+  top_image_id: 1
+  right_image_id: 1

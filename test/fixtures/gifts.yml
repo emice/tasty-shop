@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  giving_user_id: 1
+  receiving_user_id: 1
+
+two:
+  giving_user_id: 1
+  receiving_user_id: 1

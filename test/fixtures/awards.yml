@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  receiving_user_id: 1
+  awardable_type: MyString
+  awardable_id: 1
+  award_pool_id: 1
+
+two:
+  receiving_user_id: 1
+  awardable_type: MyString
+  awardable_id: 1
+  award_pool_id: 1

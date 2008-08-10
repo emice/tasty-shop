@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  facebook_id: 1
+  session_key: MyString
+  inviting_user_id: 1
+  invitations_award_level: 1
+  gifts_award_level: 1
+  canvas_visits_award_level: 1
+
+two:
+  facebook_id: 1
+  session_key: MyString
+  inviting_user_id: 1
+  invitations_award_level: 1
+  gifts_award_level: 1
+  canvas_visits_award_level: 1
