@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(:version => 20080810022946) do
   end
 
   create_table "gifts", :force => true do |t|
-    t.integer  "giving_user_id",    :limit => 11
+    t.integer  "sending_user_id",   :limit => 11
     t.integer  "receiving_user_id", :limit => 11
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -87,7 +87,7 @@ ActiveRecord::Schema.define(:version => 20080810022946) do
     t.datetime "updated_at"
   end
 
-  create_table "invitaitons_awards", :force => true do |t|
+  create_table "invitations_awards", :force => true do |t|
     t.integer  "invites_sent", :limit => 11
     t.integer  "next_level",   :limit => 11
     t.datetime "created_at"
@@ -95,9 +95,9 @@ ActiveRecord::Schema.define(:version => 20080810022946) do
   end
 
   create_table "offers", :force => true do |t|
-    t.integer  "store_inventory_id", :limit => 11
-    t.integer  "offering_user_id",   :limit => 11
-    t.integer  "value",              :limit => 11
+    t.integer  "inventory_item_id", :limit => 11
+    t.integer  "sending_user_id",   :limit => 11
+    t.integer  "value",             :limit => 11
     t.datetime "created_at"
     t.datetime "updated_at"
   end
