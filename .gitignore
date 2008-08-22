@@ -2,3 +2,4 @@ config/database.yml
 tmp/*
 log/*
 *.swp
+config/facebooker.yml
