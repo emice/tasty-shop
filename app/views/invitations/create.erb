@@ -1,0 +1,6 @@
+  <% for id in @sent_to_ids %>
+    <%= fb_profile_pic id %>
+    <%= fb_name id %>
+    <br/>
+  <% end %>
+  <%= link_to "Send another invitation", new_invitation_path %>

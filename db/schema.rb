@@ -202,7 +202,7 @@ ActiveRecord::Schema.define(:version => 20080822014256) do
   end
 
   create_table "users", :force => true do |t|
-    t.integer  "facebook_id",               :limit => 11
+    t.integer  "facebook_id",               :limit => 20, :null => false
     t.string   "session_key"
     t.integer  "inviting_user_id",          :limit => 11
     t.integer  "invitations_award_level",   :limit => 11
