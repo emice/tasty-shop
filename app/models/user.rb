@@ -1,4 +1,16 @@
 class User < ActiveRecord::Base
+  belongs_to :inviting_user, :class_name => "User", :foreign_key => :inviting_user_id
+  has_many :invited_users, :class_name => "User", :foreign_key => :inviting_user_id
+
+  belongs_to :canvas_visits_award_level, :class_name => "CanvasVisitsAward", 
+    :foreign_key => :canvas_visits_award_id
+
+  belongs_to :gifts_award_level, :class_name => "GiftsAward", 
+    :foreign_key => :gifts_award_id
+
+  belongs_to :invitations_award_level, :class_name => "InvitationsAward", 
+    :foreign_key => :invitations_award_id
+
   has_many_polymorphs :ownables, 
     :from => [:products, :stores, :store_fronts], :through => :ownerships
 
@@ -46,6 +58,13 @@ def facebook_session
     returning Facebooker::Session.create do |session|
       session.secure_with!(session_key, facebook_id, 1.hour.from_now)
     end
+end
+
+def store_inviting_user(inviting_user_id)
+  if self.inviting_user.nil?
+    # find_by_facebook_id will return nil if the inviting user is not in the db
+    self.update_attributes!({:inviting_user => User.find_by_facebook_id(inviting_user_id)})
+  end
 end
 
 def buy

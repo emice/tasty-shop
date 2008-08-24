@@ -6,7 +6,8 @@ end
 
 def new
   if params[:from]
-    @user = facebook_session.user
+    current_user.store_inviting_user(params[:from].to_i)
+    @user = facebook_session.user 
     @user.profile_fbml = render_to_string(:partial => 'profile',
       :locals => {:from => params[:from]})
   end 
