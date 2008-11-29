@@ -123,10 +123,11 @@ ActiveRecord::Schema.define(:version => 20080822014256) do
     t.integer  "product_design_id", :limit => 11
     t.string   "content_type"
     t.string   "filename"
-    t.string   "thumbnail"
     t.integer  "size",              :limit => 11
     t.integer  "width",             :limit => 11
     t.integer  "height",            :limit => 11
+    t.integer  "parent_id",         :limit => 11
+    t.string   "thumbnail"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

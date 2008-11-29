@@ -4,10 +4,11 @@ class CreateProductImages < ActiveRecord::Migration
       t.integer :product_design_id
       t.string :content_type
       t.string :filename
-      t.string :thumbnail
       t.integer :size
       t.integer :width
       t.integer :height
+      t.integer :parent_id
+      t.string :thumbnail
 
       t.timestamps
     end

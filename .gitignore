@@ -3,3 +3,4 @@ tmp/*
 log/*
 *.swp
 config/facebooker.yml
+config/amazon_s3.yml
