@@ -39,17 +39,17 @@ class User < ActiveRecord::Base
     :from => [:invitations_awards, :gifts_awards, :canvas_visits_awards], 
     :through => :awards, :foreign_key => :receiving_user_id
 
+def store_session(session_key)
+  if self.session_key != session_key
+    update_attribute(:session_key, session_key)
+  end
+end
+
 def self.for(facebook_id, facebook_session=nil)
   returning User.find_or_create_by_facebook_id(facebook_id) do |user|
     unless facebook_session.nil?
       user.store_session(facebook_session.session_key)
     end
-  end
-end
-
-def store_session(session_key)
-  if self.session_key != session_key
-    update_attribute(:session_key, session_key)
   end
 end
 

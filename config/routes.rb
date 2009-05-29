@@ -36,6 +36,7 @@ ActionController::Routing::Routes.draw do |map|
   # See how all your routes lay out with "rake routes"
 
   map.resources :invitations
+  map.resources :product_designs
 
   # Install the default routes as the lowest priority.
   map.connect ':controller/:action/:id'

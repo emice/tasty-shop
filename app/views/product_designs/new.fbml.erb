@@ -1,0 +1,6 @@
+<% facebook_form_for :product_design, ProductDesign.new, :url => product_designs_path do |f| %>
+  <%# :label option is facebook_form_for specific %>
+  <%= f.text_field :name, :label => "Name" %> <br />
+  <%= f.buttons 'Create Design' %>
+<% end %>
+

@@ -1,0 +1,24 @@
+<h1>Editing product_design</h1>
+
+<% form_for(@product_design) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :creating_user_id %><br />
+    <%= f.text_field :creating_user_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :base_value %><br />
+    <%= f.text_field :base_value %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @product_design %> |
+<%= link_to 'Back', product_designs_path %>

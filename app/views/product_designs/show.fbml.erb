@@ -1,0 +1,18 @@
+<p>
+  <b>Creating user:</b>
+  <%=h @product_design.creating_user_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @product_design.name %>
+</p>
+
+<p>
+  <b>Base value:</b>
+  <%=h @product_design.base_value %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_design_path(@product_design) %> |
+<%= link_to 'Back', product_designs_path %>
